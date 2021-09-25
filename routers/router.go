@@ -6,5 +6,7 @@ import (
 )
 
 func init() {
-    beego.Router("/", &controllers.MainController{})
+	beego.Router("/", &controllers.MainController{})
+	// 注册
+	beego.Router("/local/register", &controllers.RegisterController{})
 }
